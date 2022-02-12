@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+
+  <link href="./css/layout.css" type="text/css" rel="stylesheet" />  
+  <link href="./css/template.css" type="text/css" rel="stylesheet" />  
+  <link href="./css/login.css" type="text/css" rel="stylesheet" />  
+  <link href="./css/tables.css" type="text/css" rel="stylesheet" />  
+  <link href="./css/forms.css" type="text/css" rel="stylesheet" />  
+  <link href="./css/profile.css" type="text/css" rel="stylesheet" />
+  <link href="./css/theme.css" type="text/css" rel="stylesheet" />  
+  <link href="./fi/uicons-regular-straight.css" type="text/css" rel="stylesheet" />
+
+  <link rel="icon" href="img/favicon.png" type="image/png" />  
+  <title>uPanel - Account</title>
+</head>
+<body id="top">
+  <header class="up-header">
+    <table border="0">
+      <tr>
+        <th>
+          <a href="home.html" title="Home">
+            <img src="img/typeface-w.png" alt="uPanel" class="up-typeface" />
+          </a>
+       </th>
+        <td>
+          <ul class="desktop">
+            <li>              
+              <form action="profile.html" method="get" autocomplete="off">
+                <div class="up-fi-group">
+                  <input type="search" name="q" value="" placeholder="Search ( / )" list="dl_ticket_no" required />                  
+                  <i class="fi fi-rs-search"></i>
+                </div>
+                <datalist id="dl_ticket_no"></datalist>
+              </form>
+            </li>
+            <li>
+              <a href="#" title="Notifications">
+                &#128276;
+              </a>
+            </li>            
+            <li>
+              <a href="profile.html" title="My Account">
+                <i class="fi fi-rs-user"></i>
+                2gbeh
+              </a>
+            </li>
+            <li>
+              <a href="#" title="IP Address">
+                <i class="fi fi-rs-lock"></i>
+                <small style="font-size: 15px;">127.0.0.1</small>
+              </a>
+            </li>            
+            <li>
+              <a href="index.html" title="Exit">
+                <i class="fi fi-rs-sign-out"></i>
+                Logout
+              </a>
+            </li>           
+          </ul>   
+          <ul class="mobile">
+            <li>
+              <a onclick="toggleDrawer(this)" class="navicon" title="Menu">
+                &equiv;
+              </a>
+            </li>            
+          </ul>                    
+        </td>
+      </tr>
+    </table> 
+  </header>
+
+  <nav class="up-nav">
+    <ul class="desktop">
+      <li>
+        <a href="?" title="Reload">
+          <i class="fi fi-rs-refresh"></i>
+           Reload
+        </a>
+      </li>
+      <li>
+        <a href="home.html">
+          <i class="fi fi-rs-home"></i>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#">      
+          <i class="fi fi-rs-chart-histogram"></i>
+          Dashboard
+        </a>
+      </li>            
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-bookmark"></i>
+          Report
+        </a>
+      </li>      
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-print"></i>
+          Print
+        </a>
+      </li>      
+      <li>
+        <a href="register.html">
+          <i class="fi fi-rs-disk"></i>
+          Insert
+        </a>
+      </li>
+      <li>
+        <a href="#">      
+          <i class="fi fi-rs-list"></i>
+          Select
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-edit"></i>
+          Update
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-trash"></i>
+          Delete
+        </a>
+      </li>       
+      <li>
+        <a href="#" class="focus">
+          <i class="fi fi-rs-settings"></i>
+          Settings
+        </a>
+      </li> 
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-wheelchair"></i>
+          Tech Support
+        </a>
+      </li> 
+      <li>
+        <a href="#">
+          <!-- <i class="fi fi-rs-thermometer-half"></i> -->
+          <i class="fi fi-rs-stopwatch"></i>
+          ISP Renewal &nbsp; <meter value="0.25" title="Expires 09/02/2023">25%</meter>
+        </a>
+      </li>                       
+    </ul>
+    <ul class="mobile" id="drawer">
+      <li>
+        <a href="?" title="Reload">
+          <i class="fi fi-rs-refresh"></i>
+           Reload
+        </a>
+      </li>
+      <li>
+        <a href="home.html">
+          <i class="fi fi-rs-home"></i>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#">      
+          <i class="fi fi-rs-chart-histogram"></i>
+          Dashboard
+        </a>
+      </li>            
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-bookmark"></i>
+          Report
+        </a>
+      </li>      
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-print"></i>
+          Print
+        </a>
+      </li>      
+      <li>
+        <a href="register.html">
+          <i class="fi fi-rs-disk"></i>
+          Insert
+        </a>
+      </li>
+      <li>
+        <a href="#">      
+          <i class="fi fi-rs-list"></i>
+          Select
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-edit"></i>
+          Update
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-trash"></i>
+          Delete
+        </a>
+      </li>       
+      <li>
+        <a href="#" class="focus">
+          <i class="fi fi-rs-settings"></i>
+          Settings
+        </a>
+      </li> 
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-wheelchair"></i>
+          Tech Support
+        </a>
+      </li> 
+      <li>
+        <a href="#">
+          <!-- <i class="fi fi-rs-thermometer-half"></i> -->
+          <i class="fi fi-rs-stopwatch"></i>
+          ISP Renewal
+          <small style="font-size: 14px;">(09/02/2023)</small>
+        </a>
+      </li>  
+      <li>
+        <a href="#" title="Notifications">
+          <i class="fi fi-rs-bell"></i>
+          Notifications
+        </a>
+      </li>            
+      <li>
+        <a href="profile.html" title="My Account">
+          <i class="fi fi-rs-user"></i>
+          2gbeh 
+          <small style="font-size: 14px;">(127.0.0.1)</small>
+        </a>
+      </li>
+      <li>
+        <a href="index.html" title="Exit">
+          <i class="fi fi-rs-sign-out"></i>
+          Logout
+        </a>
+      </li>    
+    </ul>    
+  </nav>
+
+  <main class="up-profile">    
+    <p class="up-notice" id="notice">
+      <i onclick="document.querySelector('#notice').style.display = 'none'" title="Close">&times</i>
+      Showing flight records of passenger with <b>Ticket No. #1234</b>
+    </p>
+
+    <ul class="tiles">
+      <li>    
+        <table border="0">
+          <caption>
+            Account Summary
+          </caption>
+          <tr>
+            <td>
+              <figure style="background-image: url('img/avatar_m.png')" class="up-figure">&nbsp;</figure>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Passenger Name</b>
+              <p>John Doe</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Amount Paid</b>
+              <p>&#8358; 100,000</p>
+            </td>
+          </tr>        
+          <tr>
+            <td>
+              <b>Flight ID</b>
+              <p>Skyfox Interstate #1234</p>
+            </td>
+          </tr> 
+          <tr>
+            <td>
+              <b>Flight History</b>
+              <p>1 / 2 &nbsp; (~50%)</p>
+              <ol title="50%" class="tube">
+                <li style="width:50%;" class="ink">&nbsp;</li>
+              </ol>
+            </td>
+          </tr>                      
+        </table>
+      </li>
+      <li>
+        <table border="0">
+          <caption>
+            Personal Information
+          </caption>
+          <tr>
+            <td>
+              <b>Full Name</b>
+              <p>John Doe (Age 29)</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Marital Status</b>
+              <p>Single</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Telephone No.</b>
+              <p><a href="tel:+01234567890" target="_blank">01234567890</a></p>
+            </td>
+          </tr>      
+          <tr>
+            <td>
+              <b>Home Address</b>
+              <p>No. 6, Orikeze Avenue, Agbor-Obi, Delta</p>
+            </td>
+          </tr>      
+          <tr>
+            <td>
+              <b>State of Origin</b>
+              <p>Edo</p>
+            </td>
+          </tr>            
+          <tr>
+            <td>
+              <b>LGA &amp; Town of Origin</b>
+              <p>Uhunmwode, Ehor</p>
+            </td>
+          </tr>            
+          <tr>
+            <td>
+              <b>Next of Kin</b>
+              <p>Jane Doe 01234567890</p>
+            </td>
+          </tr>
+        </table>    
+      </li>
+      <li>
+        <table border="0">
+          <caption>
+            Flight Information
+          </caption>
+          <tr>
+            <td>
+              <b>Amount Paid</b>
+              <p>&#8358; 100,000</p>
+            </td>
+          </tr>        
+          <tr>
+            <td>
+              <b>Airline Name / ID</b>
+              <p>Skyfox Interstate</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Ticket No.</b>
+              <p>1234</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Departure Terminal</b>
+              <p>US</p>
+            </td>
+          </tr> 
+          <tr>
+            <td>
+              <b>Destination Terminal</b>
+              <p>UK</p>
+            </td>
+          </tr>                      
+          <tr>
+            <td>
+              <b>Flight Date</b>
+              <p>Fri, Feb 11, 2022</p>
+            </td>
+          </tr>            
+          <tr>
+            <td>
+              <b>Flight Time</b>
+              <p>09:30 AM</p>
+            </td>
+          </tr>            
+        </table>
+      </li> 
+    </ul>
+  </main>
+
+  <footer class="up-footer">
+    <section class="help">
+      Need help? Kindly contact 
+      <a href="mailto:support@upanel.com" target="_blank" class="lnk">support@upanel.com</a>, or
+      <a onclick="javascript:void(0)" class="btn">Live Chat #Webmaster</a>
+    </section>
+
+    <section class="menu">
+      <ul>
+        <li><a href="#top" title="Back to top">TOP</a></li>
+        <li><a href="javascript:void(0)">Website</a></li> 
+        <li><a href="javascript:void(0)">cPanel</a></li> 
+        <li><a href="javascript:void(0)">Webmail</a></li> 
+        <li><a href="javascript:void(0)">phpMyAdmin</a></li>
+        <li><a href="javascript:void(0)">Administrator</a></li>      
+        <li><a href="javascript:void(0)">Documentation</a></li>
+      </ul>
+    </section>
+    
+    <section class="copy">
+      <a href="" title="Reload">
+        <img src="img/typeface.png" alt="uPanel" class="up-typeface" />
+      </a>
+      <var>v4.10.2.22</var>
+      <address>
+        Copyright &copy; 2017
+        <a href="https://www.facebook.com/hwplabs" target="_blank" rel="author" title="Visit Webmaster">HWP Labs.</a> 
+        <cite>CRBN 658815</cite>
+      </address>
+    </section>
+  </footer>
+
+<script type="text/javascript">
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./js/service-worker.js', {scope: './'})
+    .then(function(registration) {console.log('Service worker registered', registration);})
+    .catch(function(error) {console.log('Service worker not registered', error);});
+  }
+</script>
+<script type="text/javascript" src="js/event-handler.js"></script>
+<script>autofill(0);</script> 
+</body>
+</html>

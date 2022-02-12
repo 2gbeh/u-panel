@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+.up-tables {
+  margin: 20px;
+  min-height: 600px;
+}
+
+.up-tables .rows table {
+  background-color: #fff;
+  font-size: 14px;
+}
+.up-tables .rows table caption {
+  margin-bottom: 20px;
+}
+.up-tables .rows table tr th {
+  border-top: solid thin;
+  border-bottom: solid;
+  padding: 10px 10px;
+  text-align: left;
+  white-space: nowrap;
+}
+.up-tables .rows table tr td {
+  border-bottom: 1px solid #ddd;
+  padding: 5px 10px;  
+}
+.up-tables .rows table tr:nth-child(odd) td {
+  background-color: #eee;
+}
+.up-tables .rows table tr:hover td {
+  border-bottom: 2px solid #222;
+}
+
+.up-tables .rows form input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 15px;
+  width: 85%;
+  font-size: 14px;
+}
+.up-tables .rows form input:focus {
+  border: 1px solid #999;
+}
+.up-tables .rows form button {
+  background-color: #3989cf;
+  color: #fff;
+  border: 1px solid #3989cf;
+  border-radius: 4px;
+  margin-left: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+.up-tables .rows form button:hover {
+  background-color: #2a6496;
+  border-color: #2a6496;
+}
+
+.up-tables .rows .w1p {
+  width: 1px;
+}
+.up-tables .rows .wsn {
+  white-space: nowrap;
+}
+.up-tables .rows .tar {
+  text-align: right;
+}
+
+.up-tables .rows .up-figure {
+  width: 35px;
+  height: 35px;
+}
+.up-tables .rows a.lnk {
+  color: #2a6496;
+  text-decoration: underline;
+}
+.up-tables .rows a.btn {
+  color: #2a6496;
+  border: 1px solid #2a6496;
+  padding: 8px 12px;
+}
+.up-tables .rows a.btn:hover {
+  background-color: #2a6496;
+  color: #fff;
+}
+
+.up-tables .rows a.btn i {
+  margin-right: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.up-tables .pagi {
+  margin-top: 20px;
+  text-align: right;
+  display: block;
+}
+
+.up-tables .pagi table {
+  width: auto;
+  display: inline-block;
+}
+.up-tables .pagi table caption {
+  padding: 4px;
+  text-align: right;
+  font-size: 14px;
+  caption-side: bottom;
+}
+
+.up-tables .pagi form input {
+  color: #555;
+  border: 1px solid #ccc;
+  padding: 10px;
+  max-width: 60px;
+  font-size: 14px;
+}
+.up-tables .pagi form button {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 683px) {
+  .up-tables {
+    margin: 20px 15px 100px;
+    min-height: auto;
+  }
+  .up-tables .rows {
+    overflow: auto;
+  }
+  .up-tables .rows table caption {
+    text-align: left;
+  }
+  .up-tables .rows form input {
+    width: 190px;
+  }
+  .up-tables .pagi {
+    text-align: left;
+  }
+}

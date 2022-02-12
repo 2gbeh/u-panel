@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+
+  <meta name="description" content="HWP Labs is a Nigerian-based software company specialized in enterprise software development and training. Contact: webmaster@hwplabs.com, (234)81-6996-0927." />
+  <meta name="keywords" content="software development,enterprise application software,website design and development,mobile app development,computer training,computer programming,hwp labs,emmanuel tugbeh" />
+  <meta name="robots" content="index,follow" />
+  <meta name="owner" content="HWP Labs" />
+  <meta name="designer" content="Tugbeh Emmanuel" />
+  <meta name="copyright" content="2017" />
+  <meta name="theme-color" content="#293a4a" />
+
+  <link href="./css/layout.css" type="text/css" rel="stylesheet" />  
+  <link href="./css/template.css" type="text/css" rel="stylesheet" />  
+  <link href="./css/login.css" type="text/css" rel="stylesheet" /> 
+  <link href="./css/tables.css" type="text/css" rel="stylesheet" />  
+  <link href="./css/forms.css" type="text/css" rel="stylesheet" />  
+  <link href="./css/profile.css" type="text/css" rel="stylesheet" />
+  <link href="./css/theme.css" type="text/css" rel="stylesheet" />  
+  <link href="./fi/uicons-regular-straight.css" type="text/css" rel="stylesheet" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="uPanel" />
+  <meta property="og:title" content="Website Admin Portal .::uPanel" />
+  <meta property="og:description" content="HWP Labs' Enterprise Application Software" />
+  <meta property="og:url" content="https://2gbeh.github.io/upanel/" />
+  <meta property="og:image" content="https://2gbeh.github.io/upanel/img/social-preview.png" />
+  <meta property="og:image:alt" content="Social Preview" />
+  <meta property="og:image:width " content="640" />
+  <meta property="og:image:height " content="320" />
+  <meta property="og:type" content="website" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Website Admin Portal .::uPanel" />
+  <meta name="twitter:description" content="HWP Labs' Enterprise Application Software" />
+  <meta name="twitter:url" content="https://2gbeh.github.io/upane/" />
+  <meta name="twitter:image" content="https://2gbeh.github.io/upanel/img/social-preview.png" />
+  <meta name="twitter:image:src" content="https://2gbeh.github.io/upanel/img/social-preview.png" />
+  <meta name="twitter:image:alt" content="Social Preview" />
+  <meta name="twitter:image:width " content="640" />
+  <meta name="twitter:image:height " content="320" />  
+
+  <link href="https://2gbeh.github.io/upanel/index.html" rel="canonical"  />
+  <link href="./manifest.json" rel="manifest" crossorigin="use-credentials" />  
+  <link href="./img/favicon.png" rel="icon" type="image/png" />  
+  <title>uPanel - Website Admin Portal</title>
+</head>
+<body>
+ <main class="up-login">
+    <h1>
+      <a href="index.html" title="Home">
+        <img src="img/typeface.png" alt="uPanel" class="up-typeface" />
+      </a>
+    </h1>
+
+    <form action="home.html" method="post" autocomplete="off">
+      <h2>Admin Portal</h2>
+
+      <p class="field-group">
+        <label for="username">Username </label>
+        <input type="text" name="username" id="username" value="" placeholder="Enter your username" required />
+        <em><b>N/b:</b> Username should not contain any spaces, uppercase or special characters.</em>
+      </p>
+      
+      <div class="field-group">
+        <label for="password">Password</label>
+        <div class="up-fi-group">
+          <input type="password" name="password" id="password" value="" placeholder="Enter your password" required />
+          <i class="fi fi-rs-eye" onclick="togglePassword()" title="Show/Hide"></i>
+        </div>
+      </div>
+      
+      <p class="button-group">
+        <button type="button" onclick="href('home.html')">Log in</button>
+        <a href="forgot.html">Reset Password</a>
+      </p>
+    </form>
+  </main>
+
+  <footer class="up-footer">
+    <section class="help">
+      Need help? Kindly contact 
+      <a href="mailto:support@upanel.com" target="_blank" class="lnk">support@upanel.com</a>, or
+      <a onclick="javascript:void(0)" class="btn">Live Chat #Webmaster</a>
+    </section>
+
+    <section class="menu">
+      <ul>
+        <li><a href="#top" title="Back to top">TOP</a></li>
+        <li><a href="javascript:void(0)">Website</a></li> 
+        <li><a href="javascript:void(0)">cPanel</a></li> 
+        <li><a href="javascript:void(0)">Webmail</a></li> 
+        <li><a href="javascript:void(0)">phpMyAdmin</a></li>
+        <li><a href="javascript:void(0)">Administrator</a></li>      
+        <li><a href="javascript:void(0)">Documentation</a></li>
+      </ul>
+    </section>
+    
+    <section class="copy">
+      <a href="" title="Reload">
+        <img src="img/typeface.png" alt="uPanel" class="up-typeface" />
+      </a>
+      <var>v4.10.2.22</var>
+      <address>
+        Copyright &copy; 2017
+        <a href="https://www.facebook.com/hwplabs" target="_blank" rel="author" title="Visit Webmaster">HWP Labs.</a> 
+        <cite>CRBN 658815</cite>
+      </address>
+    </section>
+  </footer>
+
+<script type="text/javascript">
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./js/service-worker.js', {scope: './'})
+    .then(function(registration) {console.log('Service worker registered', registration);})
+    .catch(function(error) {console.log('Service worker not registered', error);});
+  }
+</script>
+<script type="text/javascript" src="js/event-handler.js"></script>
+<script>autofill(0);</script>
+</body>
+</html>

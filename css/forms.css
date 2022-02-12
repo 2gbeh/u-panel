@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+.up-forms {
+  margin: 40px 20px 100px;
+  min-height: 600px;
+}
+
+.up-forms form {
+  margin: 0 auto;
+  width: 683px;
+}
+.up-forms form h2 {
+  margin: 20px 0 5px;
+  color: #555;
+  text-align: center;
+  font-size: 24px;
+}
+.up-forms form h3 {
+  color: #777;
+  margin: 10px 0 40px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  display: block;
+}
+
+.up-forms form label {
+  color: #555;
+  margin: 0 0 10px 2px;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  cursor: pointer;
+}
+.up-forms form label var {
+  color: #e11;
+}
+
+.up-forms form input,
+.up-forms form select,
+.up-forms form textarea {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  font-size: 14px;
+  display: block;
+}
+.up-forms form input:focus,
+.up-forms form select:focus,
+.up-forms form textarea:focus {
+  background-color: #ffc;
+  border: 1px solid #999;
+}
+.up-forms form .field-group span {
+  margin-top: 5px;
+  color: #999;
+  font-size: 10px;
+  line-height: 15px;
+  display: inline-block;
+}
+
+.up-forms form button {
+  background-color: #3989cf;
+  color: #fff;
+  border: 1px solid #2a6496;
+  border-radius: 4px;
+  margin: 20px 0 0 10px;
+  padding: 10px 20px;
+  width: auto;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+}
+.up-forms form button:hover {
+  background-color: #2a6496;
+}
+.up-forms form button[type="reset"] {
+  background-color: #fff;
+  color: #2a6496;
+}
+.up-forms form button[type="reset"]:hover {
+  background-color: #eee;
+}
+.up-forms form .button-group {
+  border-top: 1px solid #ccc;
+  text-align: right;
+}
+
+.up-forms form .hr {
+  border: dashed thin;
+}
+
+@media only screen and (max-width: 683px) {
+  .up-forms {
+    margin: 20px 15px 100px;
+    min-height: auto;
+  }
+  .up-forms form {
+    width: 100%;
+  }
+  .up-forms form h3 {
+    margin: 5px 0 20px;
+    text-align: left;
+  }
+  .up-forms form .field-group {
+    margin: 10px 0;
+  }
+  .up-forms form .button-group {
+    text-align: left;
+  }
+}

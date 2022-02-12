@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+.up-login h1 {
+  margin: 50px 0;
+  text-align: center;
+}
+.up-login h1 img {
+  width: 150px;
+  font-size: 40px;
+}
+
+.up-login form {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 auto 100px;
+  padding: 15px 30px;
+  width: 455px;  
+}
+.up-login form h2 {
+  margin: 20px 0 40px;
+  color: #555;
+  text-align: center;
+  font-size: 18px;
+}
+
+.up-login form label {
+  color: #555;
+  margin: 0 0 10px 2px;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.up-login form input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  font-size: 14px;
+  display: block;
+}
+.up-login form input:focus {
+  border: 1px solid #999;
+}
+.up-login form .field-group em {
+  padding: 5px 0 0 2px;
+  color: #999;
+  font-size: 10px;
+  font-style: normal;
+  line-height: 15px;
+  display: inline-block;
+}
+
+.up-login form button { 
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #222;
+  border-radius: 4px;
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  display: block;  
+}
+.up-login form button:hover {
+  background-color: #fff;
+  color: #222;
+}
+.up-login form .button-group {
+  text-align: center;
+}
+.up-login form .button-group a {
+  margin-top: 20px;
+  color: #222;
+  font-size: 14px;
+  font-weight: bold;
+}
+.up-login form .button-group a:hover {
+  text-decoration: underline;
+}
+
+.up-login form .up-fi-group i {
+  color: #999;
+  top: 12px;
+  right: 12px;    
+}
+
+
+@media only screen and (max-width: 683px) {
+  .up-login h1 {
+    margin: 40px 0 0;
+  }
+  .up-login form {
+    border: none;
+    margin: 0 auto;
+    padding: 0 15px 10px;
+    width: 100%;
+  }
+  .up-login form h2 {
+    margin-bottom: 20px;
+  }
+  .up-login form .field-group {
+    margin: 10px 0;
+  }
+}

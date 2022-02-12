@@ -1,0 +1,25 @@
+{
+  "name": "uPanel",
+  "short_name": "uPanel",  
+  "description": "Website Admin Portal .::uPanel",
+  "background_color": "#ffffff",
+  "theme_color": "#293a4a",
+  "start_url": "index.html",
+  "scope": "/",  
+  "display": "standalone",
+  "orientation": "portrait",
+  "dir": "rtl",
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "/img/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/msapplication-tile-image.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

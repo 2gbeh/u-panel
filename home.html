@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+
+  <link href="./css/layout.css" type="text/css" rel="stylesheet" />  
+  <link href="./css/template.css" type="text/css" rel="stylesheet" />
+  <link href="./css/login.css" type="text/css" rel="stylesheet" />  
+  <link href="./css/tables.css" type="text/css" rel="stylesheet" />  
+  <link href="./css/forms.css" type="text/css" rel="stylesheet" />  
+  <link href="./css/profile.css" type="text/css" rel="stylesheet" />
+  <link href="./css/theme.css" type="text/css" rel="stylesheet" />  
+  <link href="./fi/uicons-regular-straight.css" type="text/css" rel="stylesheet" />
+
+  <link rel="icon" href="img/favicon.png" type="image/png" />  
+  <title>uPanel - Dashboard</title>
+</head>
+<body id="top">
+  <header class="up-header">
+    <table border="0">
+      <tr>
+        <th>
+          <a href="home.html" title="Home">
+            <img src="img/typeface-w.png" alt="uPanel" class="up-typeface" />
+          </a>
+       </th>
+        <td>
+          <ul class="desktop">
+            <li>              
+              <form action="profile.html" method="get" autocomplete="off">
+                <div class="up-fi-group">
+                  <input type="search" name="q" value="" placeholder="Search ( / )" list="dl_ticket_no" required />                  
+                  <i class="fi fi-rs-search"></i>
+                </div>
+                <datalist id="dl_ticket_no"></datalist>
+              </form>
+            </li>
+            <li>
+              <a href="#" title="Notifications">
+                &#128276;
+              </a>
+            </li>            
+            <li>
+              <a href="profile.html" title="My Account">
+                <i class="fi fi-rs-user"></i>
+                2gbeh
+              </a>
+            </li>
+            <li>
+              <a href="#" title="IP Address">
+                <i class="fi fi-rs-lock"></i>
+                <small style="font-size: 15px;">127.0.0.1</small>
+              </a>
+            </li>            
+            <li>
+              <a href="index.html" title="Exit">
+                <i class="fi fi-rs-sign-out"></i>
+                Logout
+              </a>
+            </li>           
+          </ul>   
+          <ul class="mobile">
+            <li>
+              <a onclick="toggleDrawer(this)" class="navicon" title="Menu">
+                &equiv;
+              </a>
+            </li>            
+          </ul>                    
+        </td>
+      </tr>
+    </table> 
+  </header>
+
+  <nav class="up-nav">
+    <ul class="desktop">
+      <li>
+        <a href="?" title="Reload">
+          <i class="fi fi-rs-refresh"></i>
+           Reload
+        </a>
+      </li>
+      <li>
+        <a href="home.html" class="focus">
+          <i class="fi fi-rs-home"></i>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#">      
+          <i class="fi fi-rs-chart-histogram"></i>
+          Dashboard
+        </a>
+      </li>            
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-bookmark"></i>
+          Report
+        </a>
+      </li>      
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-print"></i>
+          Print
+        </a>
+      </li>      
+      <li>
+        <a href="register.html">
+          <i class="fi fi-rs-disk"></i>
+          Insert
+        </a>
+      </li>
+      <li>
+        <a href="#">      
+          <i class="fi fi-rs-list"></i>
+          Select
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-edit"></i>
+          Update
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-trash"></i>
+          Delete
+        </a>
+      </li>       
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-settings"></i>
+          Settings
+        </a>
+      </li> 
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-wheelchair"></i>
+          Tech Support
+        </a>
+      </li> 
+      <li>
+        <a href="#">
+          <!-- <i class="fi fi-rs-thermometer-half"></i> -->
+          <i class="fi fi-rs-stopwatch"></i>
+          ISP Renewal &nbsp; <meter value="0.25" title="Expires 09/02/2023">25%</meter>
+        </a>
+      </li>                       
+    </ul>
+    <ul class="mobile" id="drawer">
+      <li>
+        <a href="?" title="Reload">
+          <i class="fi fi-rs-refresh"></i>
+           Reload
+        </a>
+      </li>
+      <li>
+        <a href="home.html" class="focus">
+          <i class="fi fi-rs-home"></i>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#">      
+          <i class="fi fi-rs-chart-histogram"></i>
+          Dashboard
+        </a>
+      </li>            
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-bookmark"></i>
+          Report
+        </a>
+      </li>      
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-print"></i>
+          Print
+        </a>
+      </li>      
+      <li>
+        <a href="register.html">
+          <i class="fi fi-rs-disk"></i>
+          Insert
+        </a>
+      </li>
+      <li>
+        <a href="#">      
+          <i class="fi fi-rs-list"></i>
+          Select
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-edit"></i>
+          Update
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-trash"></i>
+          Delete
+        </a>
+      </li>       
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-settings"></i>
+          Settings
+        </a>
+      </li> 
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-wheelchair"></i>
+          Tech Support
+        </a>
+      </li> 
+      <li>
+        <a href="#">
+          <!-- <i class="fi fi-rs-thermometer-half"></i> -->
+          <i class="fi fi-rs-stopwatch"></i>
+          ISP Renewal
+          <small style="font-size: 14px;">(09/02/2023)</small>
+        </a>
+      </li>  
+      <li>
+        <a href="#" title="Notifications">
+          <i class="fi fi-rs-bell"></i>
+          Notifications
+        </a>
+      </li>            
+      <li>
+        <a href="profile.html" title="My Account">
+          <i class="fi fi-rs-user"></i>
+          2gbeh 
+          <small style="font-size: 14px;">(127.0.0.1)</small>
+        </a>
+      </li>
+      <li>
+        <a href="index.html" title="Exit">
+          <i class="fi fi-rs-sign-out"></i>
+          Logout
+        </a>
+      </li>    
+    </ul>    
+  </nav>
+
+  <main class="up-tables">
+    <p class="up-notice" id="notice">
+      <i onclick="document.querySelector('#notice').style.display = 'none'" title="Close">&times</i>
+      Showing most recent flight records from the passenger manifest
+    </p>
+
+    <section class="rows">
+      <table border="0">
+        <caption>
+          <form action="profile.html" method="get" autocomplete="off">
+            <input type="search" name="q" value="" placeholder="Ticket No." list="dl_ticket_no" required />
+            <datalist id="dl_ticket_no"></datalist>
+            <button>Search</button>
+          </form>
+        </caption>
+        <thead>
+          <tr>
+            <th class="w1p"><input type="checkbox" disabled /></th>
+            <th class="w1p tar"> #</th>
+            <th class="w1p">Passport</th>
+            <th>Passenger</th>
+            <th>Telephone</th>
+            <th class="tar">Amount (&#8358;)</th>
+            <th>Airline ID</th>
+            <th class="tar"> Ticket No.</th>
+            <th>Departure</th>
+            <th>Destination</th>
+            <th>Flight Schedule</th>
+            <th class="w1p wsn">&nbsp;</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="w1p"><input type="checkbox" disabled /></td>
+            <td class="w1p tar">1</td> 
+            <td class="w1p">
+              <figure style="background-image: url('img/avatar_m.png')" class="up-figure">&nbsp;</figure>
+            </td>
+            <td>John Doe</td>
+            <td>
+              <a href="tel:+01234567890" target="_blank" class="lnk">
+                01234567890
+              </a>
+            </td>
+            <td class="tar">19,800.00</td>
+            <td>PEACE</td>
+            <td class="tar">1234</td>
+            <td>US</td>
+            <td>UK</td>
+            <td class="wsn">
+              Fri, Feb 11, 2022 <br/>
+              09:00 AM
+            </td>
+            <td class="w1p wsn">
+              <a href="profile.html?q=1234" class="btn">
+               <i class="fi fi-rs-portrait"></i>
+                Manage
+              </a>
+              <a href="?e=true&q=1234" class="btn">
+               <i class="fi fi-rs-pencil"></i>
+                Edit
+              </a>
+              <a href="?d=true&q=1234" class="btn">
+               <i class="fi fi-rs-cross-circle"></i>
+                Delete
+              </a>              
+            </td>
+          </tr>
+          <tr>
+            <td class="w1p"><input type="checkbox" disabled /></td>
+            <td class="w1p tar">2</td> 
+            <td class="w1p">
+              <figure style="background-image: url('img/avatar_f.png')" class="up-figure">&nbsp;</figure>
+            </td>
+            <td>Jane Doe</td>
+            <td>
+              <a href="tel:+01234567891" target="_blank" class="lnk">
+                01234567891
+              </a>
+            </td>
+            <td class="tar">48,500.00</td>
+            <td>DANA</td>
+            <td class="tar">1235</td>
+            <td>NG</td>
+            <td>ZA</td>
+            <td class="wsn">
+              Fri, Feb 11, 2022 <br/>
+              09:30 AM
+            </td>
+            <td class="w1p wsn">
+              <a href="profile.html?q=1234" class="btn">
+               <i class="fi fi-rs-portrait"></i>
+                Manage
+              </a>
+              <a href="?e=true&q=1234" class="btn">
+               <i class="fi fi-rs-pencil"></i>
+                Edit
+              </a>
+              <a href="?d=true&q=1234" class="btn">
+               <i class="fi fi-rs-cross-circle"></i>
+                Delete
+              </a>
+            </td>
+          </tr>
+        </tbody>    
+      </table>
+    </section>
+
+    <section class="pagi">
+      <form action="" method="get" autocomplete="off">
+        <table border="0">
+          <caption>0 - 24 of 25 records</caption>
+          <tr>
+            <td>
+              <button name="first" value="true" title="First">&lt;&lt;</button>
+            </td>            
+            <td>
+              <button name="previous" value="true" title="Previous">&lt;</button>
+            </td>
+            <td>             
+              <input type="number" name="p" min="1" value="1" onchange="handlePager(this.value)" required />
+            </td>
+            <td>
+              <button name="next" value="true" title="Next">&gt;</button>
+            </td>            
+            <td>
+              <button name="last" value="true" title="Last">&gt;&gt;</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </section>
+  </main>
+
+  <footer class="up-footer">
+    <section class="help">
+      Need help? Kindly contact 
+      <a href="mailto:support@upanel.com" target="_blank" class="lnk">support@upanel.com</a>, or
+      <a onclick="javascript:void(0)" class="btn">Live Chat #Webmaster</a>
+    </section>
+
+    <section class="menu">
+      <ul>
+        <li><a href="#top" title="Back to top">TOP</a></li>
+        <li><a href="javascript:void(0)">Website</a></li> 
+        <li><a href="javascript:void(0)">cPanel</a></li> 
+        <li><a href="javascript:void(0)">Webmail</a></li> 
+        <li><a href="javascript:void(0)">phpMyAdmin</a></li>
+        <li><a href="javascript:void(0)">Administrator</a></li>      
+        <li><a href="javascript:void(0)">Documentation</a></li>
+      </ul>
+    </section>
+    
+    <section class="copy">
+      <a href="" title="Reload">
+        <img src="img/typeface.png" alt="uPanel" class="up-typeface" />
+      </a>
+      <var>v4.10.2.22</var>
+      <address>
+        Copyright &copy; 2017
+        <a href="https://www.facebook.com/hwplabs" target="_blank" rel="author" title="Visit Webmaster">HWP Labs.</a> 
+        <cite>CRBN 658815</cite>
+      </address>
+    </section>
+  </footer>
+
+<script type="text/javascript">
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./js/service-worker.js', {scope: './'})
+    .then(function(registration) {console.log('Service worker registered', registration);})
+    .catch(function(error) {console.log('Service worker not registered', error);});
+  }
+</script>
+<script type="text/javascript" src="js/event-handler.js"></script>
+<script>autofill(0);</script>
+</body>
+</html>

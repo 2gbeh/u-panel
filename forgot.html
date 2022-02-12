@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+
+  <link href="./css/layout.css" type="text/css" rel="stylesheet" />  
+  <link href="./css/template.css" type="text/css" rel="stylesheet" />  
+  <link href="./css/login.css" type="text/css" rel="stylesheet" />  
+  <link href="./css/tables.css" type="text/css" rel="stylesheet" />  
+  <link href="./css/forms.css" type="text/css" rel="stylesheet" />  
+  <link href="./css/profile.css" type="text/css" rel="stylesheet" />
+  <link href="./css/theme.css" type="text/css" rel="stylesheet" />  
+  <link href="./fi/uicons-regular-straight.css" type="text/css" rel="stylesheet" />
+
+  <link rel="icon" href="img/favicon.png" type="image/png" />  
+  <title>uPanel - Reset Password</title>
+</head>
+<body>
+  <main class="up-login">
+    <h1>
+      <a href="index.html" title="Home">
+        <img src="img/typeface.png" alt="uPanel" class="up-typeface" />
+      </a>
+    </h1>
+
+    <form action="index.html" method="post" autocomplete="off">
+      <h2>Reset Password</h2>
+
+      <div class="field-group">
+        <label for="email">Email Address</label>        
+        <div class="up-fi-group">
+          <input type="email" name="email" id="email" value="" placeholder="Ex. example@domain.com" required />
+          <i class="fi fi-rs-paper-plane"></i>
+        </div>
+        <em><b>N/b:</b> A reset password link or code will be sent to your email.</em>        
+      </div>
+      
+      <p class="button-group">
+        <button type="button" onclick="href('index.html')">Submit</button>
+        <a href="index.html">Return to Login</a>
+      </p>
+    </form>
+  </main>
+
+  <footer class="up-footer">
+    <section class="help">
+      Need help? Kindly contact 
+      <a href="mailto:support@upanel.com" target="_blank" class="lnk">support@upanel.com</a>, or
+      <a onclick="javascript:void(0)" class="btn">Live Chat #Webmaster</a>
+    </section>
+
+    <section class="menu">
+      <ul>
+        <li><a href="#top" title="Back to top">TOP</a></li>
+        <li><a href="javascript:void(0)">Website</a></li> 
+        <li><a href="javascript:void(0)">cPanel</a></li> 
+        <li><a href="javascript:void(0)">Webmail</a></li> 
+        <li><a href="javascript:void(0)">phpMyAdmin</a></li>
+        <li><a href="javascript:void(0)">Administrator</a></li>      
+        <li><a href="javascript:void(0)">Documentation</a></li>
+      </ul>
+    </section>
+    
+    <section class="copy">
+      <a href="" title="Reload">
+        <img src="img/typeface.png" alt="uPanel" class="up-typeface" />
+      </a>
+      <var>v4.10.2.22</var>
+      <address>
+        Copyright &copy; 2017
+        <a href="https://www.facebook.com/hwplabs" target="_blank" rel="author" title="Visit Webmaster">HWP Labs.</a> 
+        <cite>CRBN 658815</cite>
+      </address>
+    </section>
+  </footer>
+
+<script type="text/javascript">
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./js/service-worker.js', {scope: './'})
+    .then(function(registration) {console.log('Service worker registered', registration);})
+    .catch(function(error) {console.log('Service worker not registered', error);});
+  }
+</script>
+<script type="text/javascript" src="js/event-handler.js"></script>
+<script>autofill(0);</script>
+</body>
+</html>

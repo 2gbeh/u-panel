@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+.up-profile {
+  margin: 20px;
+  min-height: 600px;
+}
+
+.up-profile ul.tiles {
+  margin-bottom: 100px;
+  text-align: center;
+}
+.up-profile ul.tiles > li {
+  box-shadow: 0 1px 2px #ccc;
+  margin: 10px;
+  min-width: 410px;
+  max-width: 410px;
+  vertical-align: top;
+}
+
+.up-profile ul.tiles table caption {
+  background-color: #3989cf;
+  color: #fff;
+  border-bottom: 1px solid #2a6496;
+  border-radius: 4px 4px 0 0;
+  padding: 12px 20px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.up-profile ul.tiles table tr td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.up-profile ul.tiles .up-figure {
+  margin: 10px 0 10px 120px;
+  width: 150px;
+  height: 150px;
+}
+.up-profile ul.tiles b {
+  color: #555;
+  font-size: 14px;
+}
+.up-profile ul.tiles p {
+  margin: 8px 0 5px 1px;
+}
+.up-profile ul.tiles a {
+  color: #2a6496;
+  text-decoration: underline;
+}
+.up-profile ul.tiles .tube {
+  background-color: #c8c8c8;
+  margin: 10px 0;
+  padding: 0;
+  height: 5px;
+  cursor: pointer;
+}
+.up-profile ul.tiles .ink {
+  background-color: #5cb85c;
+  height: 5px;
+}
+
+@media only screen and (max-width: 683px) {
+  .up-profile {
+    margin: 20px 15px;
+    min-height: auto;
+  }
+  .up-profile ul.tiles > li {
+    margin: 10px 0 20px;
+    min-width: 100%;
+    max-width: 100%;
+    display: block;
+  }
+  .up-profile ul.tiles table caption {
+    padding: 12px 15px;
+  }
+  .up-profile ul.tiles .up-figure {
+    margin-left: 50px;
+    width: 160px;
+    height: 160px;
+  }
+}

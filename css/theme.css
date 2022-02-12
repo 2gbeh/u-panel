@@ -1,0 +1,47 @@
+@charset "utf-8";
+/*
+CPANEL
+	orange ff6c2c
+	header 293a4a
+	search 344453
+	nav eaeaea
+	aside f5f5f5
+	thead f2f2f2
+	tbody f9f9f9
+	button 3989cf
+	btn:hover 2a6496
+	notice d7edf9
+	notice-left 179bd7
+	chart-ink 5cb85c
+	chart-tube c8c8c8
+*/
+.background-color,
+.up-login form button {
+  background-color: #ff6c2c;
+}
+.color,
+.up-typeface,
+.up-login form button:hover,
+.up-login form .button-group a {
+  color: #ff6c2c;
+}
+.border-color,
+.up-login form button {
+  border-color: #ff6c2c;
+}
+
+.background-color,
+.up-footer .help a.btn,
+.up-header,
+.up-nav ul li a:hover {
+  background-color: #293a4a;
+	color: #fff;
+}
+.color,
+.up-footer .help a.btn:hover {
+  color: #293a4a;
+}
+.border-color,
+.up-footer .help a.btn {
+  border-color: #293a4a;
+}

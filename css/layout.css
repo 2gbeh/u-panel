@@ -1,0 +1,144 @@
+@charset "utf-8";
+/*
+CPANEL
+	orange ff6c2c
+	header 293a4a
+	search 344453
+	nav eaeaea
+	aside f5f5f5
+	thead f2f2f2
+	tbody f9f9f9
+	button 3989cf
+	btn:hover 2a6496
+	notice d7edf9
+	notice-left 179bd7
+	chart-ink 5cb85c
+	chart-tube c8c8c8
+*/
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  margin: 0;
+  color: #222;
+}
+header,
+nav,
+footer {
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+ul li {
+  display: inline-block;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+input,
+select,
+textarea,
+button {
+  outline: none;
+  font-size: inherit;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+form input[readonly],
+form select[readonly],
+form textarea[readonly] {
+  background-color: #eee;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  background-color: #ffc;
+}
+address,
+cite,
+span,
+var,
+i,
+u {
+  font-style: normal;
+  display: inline-block;
+}
+
+.up-typeface {
+  color: #222;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.up-notice {
+  background-color: #d7edf9;
+  color: #333;
+  border-left: solid #179bd7;
+  margin: 0 0 20px;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.up-notice i {
+  font-size: 24px;
+  line-height: 0.9;
+  float: right;
+  cursor: pointer;
+}
+.up-notice i:hover {
+  color: #e11;
+}
+
+.up-figure {
+  background-image: url("img/default.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: scroll;
+  background-size: cover;
+  border: 1px solid #999;
+  border-radius: 100%;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.up-fi-group {
+  position: relative;
+}
+.up-fi-group i {
+  position: absolute;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 683px) {
+  .up-notice {
+    padding: 12px;
+  }
+}

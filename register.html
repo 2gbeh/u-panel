@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+
+  <link href="./css/layout.css" type="text/css" rel="stylesheet" />  
+  <link href="./css/template.css" type="text/css" rel="stylesheet" />  
+  <link href="./css/login.css" type="text/css" rel="stylesheet" />  
+  <link href="./css/tables.css" type="text/css" rel="stylesheet" />  
+  <link href="./css/forms.css" type="text/css" rel="stylesheet" />  
+  <link href="./css/profile.css" type="text/css" rel="stylesheet" />
+  <link href="./css/theme.css" type="text/css" rel="stylesheet" />  
+  <link href="./fi/uicons-regular-straight.css" type="text/css" rel="stylesheet" />
+
+  <link rel="icon" href="img/favicon.png" type="image/png" />  
+  <title>uPanel - Register</title>
+</head>
+<body id="top">
+  <header class="up-header">
+    <table border="0">
+      <tr>
+        <th>
+          <a href="home.html" title="Home">
+            <img src="img/typeface-w.png" alt="uPanel" class="up-typeface" />
+          </a>
+       </th>
+        <td>
+          <ul class="desktop">
+            <li>              
+              <form action="profile.html" method="get" autocomplete="off">
+                <div class="up-fi-group">
+                  <input type="search" name="q" value="" placeholder="Search ( / )" list="dl_ticket_no" required />                  
+                  <i class="fi fi-rs-search"></i>
+                </div>
+                <datalist id="dl_ticket_no"></datalist>
+              </form>
+            </li>
+            <li>
+              <a href="#" title="Notifications">
+                &#128276;
+              </a>
+            </li>            
+            <li>
+              <a href="profile.html" title="My Account">
+                <i class="fi fi-rs-user"></i>
+                2gbeh
+              </a>
+            </li>
+            <li>
+              <a href="#" title="IP Address">
+                <i class="fi fi-rs-lock"></i>
+                <small style="font-size: 15px;">127.0.0.1</small>
+              </a>
+            </li>            
+            <li>
+              <a href="index.html" title="Exit">
+                <i class="fi fi-rs-sign-out"></i>
+                Logout
+              </a>
+            </li>           
+          </ul>   
+          <ul class="mobile">
+            <li>
+              <a onclick="toggleDrawer(this)" class="navicon" title="Menu">
+                &equiv;
+              </a>
+            </li>            
+          </ul>                    
+        </td>
+      </tr>
+    </table> 
+  </header>
+
+  <nav class="up-nav">
+    <ul class="desktop">
+      <li>
+        <a href="?" title="Reload">
+          <i class="fi fi-rs-refresh"></i>
+           Reload
+        </a>
+      </li>
+      <li>
+        <a href="home.html">
+          <i class="fi fi-rs-home"></i>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#">      
+          <i class="fi fi-rs-chart-histogram"></i>
+          Dashboard
+        </a>
+      </li>            
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-bookmark"></i>
+          Report
+        </a>
+      </li>      
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-print"></i>
+          Print
+        </a>
+      </li>      
+      <li>
+        <a href="register.html" class="focus">
+          <i class="fi fi-rs-disk"></i>
+          Insert
+        </a>
+      </li>
+      <li>
+        <a href="#">      
+          <i class="fi fi-rs-list"></i>
+          Select
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-edit"></i>
+          Update
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-trash"></i>
+          Delete
+        </a>
+      </li>       
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-settings"></i>
+          Settings
+        </a>
+      </li> 
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-wheelchair"></i>
+          Tech Support
+        </a>
+      </li> 
+      <li>
+        <a href="#">
+          <!-- <i class="fi fi-rs-thermometer-half"></i> -->
+          <i class="fi fi-rs-stopwatch"></i>
+          ISP Renewal &nbsp; <meter value="0.25" title="Expires 09/02/2023">25%</meter>
+        </a>
+      </li>                       
+    </ul>
+    <ul class="mobile" id="drawer">
+      <li>
+        <a href="?" title="Reload">
+          <i class="fi fi-rs-refresh"></i>
+           Reload
+        </a>
+      </li>
+      <li>
+        <a href="home.html">
+          <i class="fi fi-rs-home"></i>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#">      
+          <i class="fi fi-rs-chart-histogram"></i>
+          Dashboard
+        </a>
+      </li>            
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-bookmark"></i>
+          Report
+        </a>
+      </li>      
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-print"></i>
+          Print
+        </a>
+      </li>      
+      <li>
+        <a href="register.html" class="focus">
+          <i class="fi fi-rs-disk"></i>
+          Insert
+        </a>
+      </li>
+      <li>
+        <a href="#">      
+          <i class="fi fi-rs-list"></i>
+          Select
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-edit"></i>
+          Update
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-trash"></i>
+          Delete
+        </a>
+      </li>       
+      <li>
+        <a href="profile.html">
+          <i class="fi fi-rs-settings"></i>
+          Settings
+        </a>
+      </li> 
+      <li>
+        <a href="#">
+          <i class="fi fi-rs-wheelchair"></i>
+          Tech Support
+        </a>
+      </li> 
+      <li>
+        <a href="#">
+          <!-- <i class="fi fi-rs-thermometer-half"></i> -->
+          <i class="fi fi-rs-stopwatch"></i>
+          ISP Renewal
+          <small style="font-size: 14px;">(09/02/2023)</small>
+        </a>
+      </li>  
+      <li>
+        <a href="#" title="Notifications">
+          <i class="fi fi-rs-bell"></i>
+          Notifications
+        </a>
+      </li>            
+      <li>
+        <a href="profile.html" title="My Account">
+          <i class="fi fi-rs-user"></i>
+          2gbeh 
+          <small style="font-size: 14px;">(127.0.0.1)</small>
+        </a>
+      </li>
+      <li>
+        <a href="index.html" title="Exit">
+          <i class="fi fi-rs-sign-out"></i>
+          Logout
+        </a>
+      </li>    
+    </ul>    
+  </nav>
+
+  <main class="up-forms">
+    <form action="" method="post" autocomplete="off" enctype="multipart/form-data">
+      <h2>Add new flight ticket</h2>
+      <h3><b>Note:</b> Asterisked *labels represent mandatory / required fields.</h3>
+
+      <p class="field-group">
+        <label for="photo">Passport Photo</label>
+        <input type="file" name="photo" id="photo" value="" placeholder="" accept="image/*" />
+      </p>
+      
+      <p class="field-group">
+        <label for="names"><var>*</var> Full Name</label>
+        <input type="text" name="names" id="names" value="" placeholder="N/b: Surname first" required />
+      </p>
+      
+      <p class="field-group">
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" value="0" min="1" placeholder="" />
+      </p>
+      
+      <p class="field-group">
+        <label for="married">Marital Status</label>
+        <select name="married" id="married">
+          <option></option>
+          <option value="0">Single</option>
+          <option value="1">Married</option>
+        </select>
+      </p>
+      
+      <p class="field-group">
+        <label for="phone"><var>*</var> Telephone No.</label>
+        <input type="tel" name="phone" id="phone" value="" placeholder="Ex. +(01)-2345-6789" required />
+      </p>
+      
+      <p class="field-group">
+        <label for="address"><var>*</var> Home Address</label>
+        <textarea name="address" id="address" placeholder="" required></textarea>
+      </p>
+      
+      <p class="field-group">
+        <label for="soo"><var>*</var> State of Origin</label>
+        <select name="soo" id="soo" required>
+          <option></option>
+        </select>
+      </p>
+      
+      <p class="field-group">
+        <label for="lga"><var>*</var> LGA of Origin</label>
+        <input type="search" name="lga" id="lga" value="" placeholder="" required />
+      </p>
+      
+      <p class="field-group">
+        <label for="password"><var>*</var> Town of Origin</label>
+        <input type="search" name="password" id="password" value="" placeholder="" required />
+      </p>
+      
+      <p class="field-group">
+        <label for="kin"><var>*</var> Next of Kin</label>
+        <input type="search" name="kin" id="kin" value="" placeholder="N/b: Name and contact info" required />
+      </p>
+
+      <p class="hr"></p>
+      
+      <p class="field-group">
+        <label for="amount"><var>*</var> Amount Paid (&#8358;)</label>
+        <input type="number" name="amount" id="amount" value="0" min="0" placeholder="Ex. 19800" required />
+      </p>
+      
+      <p class="field-group">
+        <label for="airline"><var>*</var> Airline Name / ID</label>
+        <input type="search" name="airline" id="airline" value="" placeholder="Ex. Kenya Airways " required />
+      </p>
+      
+      <p class="field-group">
+        <label for="ticket_no"><var>*</var> Ticket No.</label>
+        <input type="number" name="ticket_no" id="ticket_no" value="" min="0" placeholder="Ex. TN-1234" required />
+      </p>
+      
+      <p class="field-group">
+        <label for="departure"><var>*</var> Departure Terminal</label>
+        <input type="search" name="departure" id="departure" value="" placeholder="" required />
+      </p>
+      
+      <p class="field-group">
+        <label for="destination"><var>*</var> Destination Terminal</label>
+        <input type="search" name="destination" id="destination" value="" placeholder="" required />
+      </p>
+      
+      <p class="field-group">
+        <label for="flight_date"><var>*</var> Flight Date</label>
+        <input type="date" name="flight_date" id="flight_date" value="" placeholder="Ex. YYYY-MM-DD" required />
+      </p>
+      
+      <p class="field-group">
+        <label for="flight_time"><var>*</var> Flight Time</label>
+        <input type="time" name="flight_time" id="flight_time" value="" placeholder="Ex. hh:mm:ss" required />
+      </p>
+      
+      <p class="button-group">
+        <button type="reset">Clear</button>
+        <button>Save &amp; Continue</button>
+      </p>    
+    </form>
+  </main>
+
+  <footer class="up-footer">
+    <section class="help">
+      Need help? Kindly contact 
+      <a href="mailto:support@upanel.com" target="_blank" class="lnk">support@upanel.com</a>, or
+      <a onclick="javascript:void(0)" class="btn">Live Chat #Webmaster</a>
+    </section>
+
+    <section class="menu">
+      <ul>
+        <li><a href="#top" title="Back to top">TOP</a></li>
+        <li><a href="javascript:void(0)">Website</a></li> 
+        <li><a href="javascript:void(0)">cPanel</a></li> 
+        <li><a href="javascript:void(0)">Webmail</a></li> 
+        <li><a href="javascript:void(0)">phpMyAdmin</a></li>
+        <li><a href="javascript:void(0)">Administrator</a></li>      
+        <li><a href="javascript:void(0)">Documentation</a></li>
+      </ul>
+    </section>
+    
+    <section class="copy">
+      <a href="" title="Reload">
+        <img src="img/typeface.png" alt="uPanel" class="up-typeface" />
+      </a>
+      <var>v4.10.2.22</var>
+      <address>
+        Copyright &copy; 2017
+        <a href="https://www.facebook.com/hwplabs" target="_blank" rel="author" title="Visit Webmaster">HWP Labs.</a> 
+        <cite>CRBN 658815</cite>
+      </address>
+    </section>
+  </footer>
+
+<script type="text/javascript">
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./js/service-worker.js', {scope: './'})
+    .then(function(registration) {console.log('Service worker registered', registration);})
+    .catch(function(error) {console.log('Service worker not registered', error);});
+  }
+</script>
+<script type="text/javascript" src="js/event-handler.js"></script>
+<script>autofill(0);</script> 
+</body>
+</html>
