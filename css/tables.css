@@ -135,4 +135,7 @@
   .up-tables .pagi {
     text-align: left;
   }
+  .up-tables .pagi form input {
+    max-width: 40px;
+  }  
 }
